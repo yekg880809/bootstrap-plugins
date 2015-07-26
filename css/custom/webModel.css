@@ -1,0 +1,172 @@
+*{margin:0;padding:0}
+
+.page{
+	width:100%;
+}
+
+.form-edit tr:first-child th,.form-edit .table-condensed td{
+	padding-top:0px;
+	padding-left:0px;
+	padding-bottom:0px;
+}
+
+blockquote {
+    margin: 0 0 5px;
+}
+
+.input-container{
+	min-width:220.5px;
+}
+
+.td-title{
+	min-width:100px;
+}
+
+.right-align{
+	text-align:right;
+}
+
+.table td:first-child,.table td:last-child{
+	width: 0;
+}
+
+.table{
+	margin-bottom:0px;
+}
+
+.form-edit .table td{
+	vertical-align: middle;
+}
+
+.form-edit input[type="text"],.form-edit select[class*="span"]{
+	margin-left:0px;
+	margin-bottom: 0px;
+}
+
+input[type="checkbox"] {
+    line-height: normal;
+    margin: 4px 7px -4px 8px;
+}
+
+.btn-large{
+	padding: 6px 16px;
+	font-size:11px;
+	color:#fff;
+}
+
+.page1 > .action-btns{
+	position:relative;
+	margin:0px;
+	padding: 7px 10px;
+	min-width:440px;
+}
+
+.page2 > .action-btns{
+	position:relative;
+	margin:0px;
+	padding: 7px 10px;
+	min-width:1008px;
+}
+
+.page3 > .action-btns{
+	position:relative;
+	margin:0px;
+	padding: 7px 10px;
+	min-width:607px;
+}
+
+.page4 > .action-btns,.page5 > .action-btns{
+	position:relative;
+	margin:0px;
+	padding: 7px 10px;
+	min-width:959px;
+}
+
+.action-btns{
+	position:relative;
+	margin:0px;
+	padding: 7px 10px;
+}
+
+.prev-step{
+	
+}
+
+.next-step{
+}
+
+.select-attr{
+	//position:relative;
+}
+.btn-list{
+	position:relative;
+	display:block;
+	top: -29px;
+}
+
+.btn-remove-title{
+	min-width:41px;
+}
+
+.btn-remove{
+	width:0;
+	max-width:0;
+}
+
+.select-item{
+	width:220.5px;
+	min-width:220.5px;
+}
+
+.resize-full{
+	font-size:16px;
+}
+
+.btn-group >.btn{
+	float:left;
+}
+
+.error,input.error{
+	border-color: rgb(185, 74, 72);
+}
+
+h1, h2, h3, h4, h5, h6{
+	line-height: 10px;
+}
+
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+
+.left-float{
+	float:left;
+}
+
+.btn-group > .dropdown-menu{
+	//border:1px solid #333;
+}
+
+.dropdown-menu > li{
+	padding:0 5px;
+	cursor:pointer;
+}
+
+.dropdown-menu > li:hover {
+	background-color:#efefef;
+}
+ 
+@media screen and (min-width:1080px){
+	
+}
+
+@media screen and (min-width:798px) and (max-width:1080px){
+	
+}
+
+@media screen and (min-width:0px) and (max-width:798px){
+	
+}

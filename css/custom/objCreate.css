@@ -1,0 +1,167 @@
+*{margin:0;padding:0}
+select:focus{
+	border-color:rgba(82,168,236,0.8);
+	box-shadow:0 1px 1px rgba(0,0,0,0.075) inset,0 0 8px rgba(82,168,236,0.6);
+	outline:0 none;
+}
+.form-edit tr:first-child th,.form-edit .table-condensed td{
+	padding-top:0px;
+	padding-left:0px;
+	padding-bottom:0px;
+}
+
+.input-container{
+	min-width:220.5px;
+}
+
+.table td:first-child,.table td:last-child{
+	width:0;
+}
+
+.table{
+	margin-bottom:0px;
+}
+
+.form-edit .table td{
+	vertical-align: middle;
+}
+
+.form-edit input[type="text"],.form-edit select[class*="span"]{
+	margin-left:0px;
+	margin-bottom: 0px;
+}
+
+input[type="checkbox"] {
+    line-height: normal;
+    margin: 4px 7px -4px 8px;
+}
+
+.btn-large{
+	padding: 5px 19px;
+}
+
+.well{
+	position:relative;
+}
+
+.well-select{
+	padding: 7px 19px 0;
+	position:relative;
+}
+
+.well-btn{
+	padding: 7px 19px;
+}
+
+.well-select > div{
+	margin-left: 150px;
+    margin-top: 2px;
+}
+
+select.sheet,select.majorkey,select.forekey{
+	display: block;
+	float:left;
+}
+
+.s2mk:after{
+	border-top:2px solid #666;
+}
+
+.mk2fk:after{
+	border-top:2px dotted #666;
+}
+
+.line:after{
+	position:absolute;
+	content:"";
+	width:15px;
+	height:10px;
+	
+	margin-left:-22px;
+	margin-top:13px;
+}
+
+.key-relations > .input-append{
+	margin-right: 28px;
+}
+
+.error,input.error{
+	border-color: rgb(185, 74, 72);
+}
+
+h1, h2, h3, h4, h5, h6{
+	line-height: 10px;
+}
+
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+	clear:both;
+}
+
+.left-float{
+	float:left;
+}
+
+.btn-group > .dropdown-menu{
+	//border:1px solid #333;
+}
+
+.dropdown-menu > li{
+	padding:0 5px;
+	cursor:pointer;
+}
+
+.dropdown-menu > li:hover {
+	background-color:#efefef;
+}
+ 
+@media screen and (min-width:1080px){
+	.well-select{
+		padding: 7px 19px 0;
+		position:relative;
+	}
+
+	.well-select > div{
+		margin-left: 21%;
+		margin-top: 2px;
+	}
+}
+
+@media screen and (min-width:798px) and (max-width:1080px){
+	.well-select{
+		padding: 7px 19px 0;
+		position:relative;
+		min-width:822px;
+	}
+
+	.well-select > div{
+		margin-left: 0;
+		margin-top: 2px;
+	}
+
+	.well-select{
+		padding: 7px 7px 0;
+		position:relative;
+	}
+}
+
+@media screen and (min-width:0px) and (max-width:798px){
+	.well-select{
+		padding: 7px 19px 0;
+		position:relative;
+		min-width:822px;
+	}
+
+	.well-select > div{
+		margin-left: 0;
+		margin-top: 2px;
+	}
+
+	.well-select{
+		padding: 7px 7px 0;
+		position:relative;
+	}
+}

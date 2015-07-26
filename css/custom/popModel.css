@@ -1,0 +1,10 @@
+.alert{
+	margin: 0;
+}
+
+.content{
+	margin: 0 0 10px;
+	clip : auto;
+	word-wrap :break-word ;
+
+}
