@@ -1,4 +1,10 @@
-(function($) {  
+(function($) { 
+	"use strict";
+
+	var pluginName = 'tabs';
+
+	var v = '0.1';
+
 				$.fn.tabs = function(options) { 
 						debug(this);  
 						$this = $(this);
