@@ -11,8 +11,7 @@
   * Then we can activate this plugin, for example
 
 	
-`<div class="father">`
-
+<div class="father">
 	<div class = "data-container">
 		<div style="width:100px;height:100px;background-color:red;"></div>
 	</div>
