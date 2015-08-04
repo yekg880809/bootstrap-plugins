@@ -10,19 +10,18 @@
 
   * Then we can activate this plugin, for example
 
-	<div>
-		<div class="father">
-			<div class = "data-container">
-				<div style="width:100px;height:100px;background-color:red;"></div>
-			</div>
-			<div class = "data-container">
-				<div style="width:100px;height:100px;background-color:blue;"></div>
-			</div>
-			<div class = "data-container">
-				<div style="width:100px;height:100px;background-color:green;"></div>
-			</div>
-		 </div>
+	
+<div class="father">
+	<div class = "data-container">
+		<div style="width:100px;height:100px;background-color:red;"></div>
 	</div>
+	<div class = "data-container">
+		<div style="width:100px;height:100px;background-color:blue;"></div>
+	</div>
+	<div class = "data-container">
+		<div style="width:100px;height:100px;background-color:green;"></div>
+	</div>
+ </div>
 
 	PS:Class 'father' is tabs's container, class 'data-container' used to fill every tab's content.
 
