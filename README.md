@@ -1,14 +1,14 @@
-﻿# bootstrap-plugins
+﻿## bootstrap-plugins
 
-1.tabs
+## tabs
   
-  Include file "bootstrap-tabs.js" first .
+  * Include file "bootstrap-tabs.js" first .
 
-  Prepare a father 'div' tag and some children 'div' tag . 
+  * Prepare a father 'div' tag and some children 'div' tag . 
   
-  Each children one as content container of a tab.
+  * Each children one as content container of a tab.
 
-  Then we can activate this plugin, for example
+  * Then we can activate this plugin, for example
 
 	<div class="father">
 		<div class = "data-container"><div style="width:100px;height:100px;background-color:red;"></div></div>
