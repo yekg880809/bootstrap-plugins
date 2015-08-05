@@ -1,6 +1,6 @@
 # bootstrap-plugins
 
-# tabs
+## tabs
   
   Include file "bootstrap-tabs.js" first .
 
