@@ -1,4 +1,8 @@
-(function($) {  
+(function($) {
+
+	var pluginName = 'pop-modal';
+
+	var v = '0.1';
 				$.fn.popModal = function(options) { 
 						debug(this);  
 						$this = $(this);
