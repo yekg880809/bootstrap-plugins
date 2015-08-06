@@ -30,5 +30,5 @@ Class 'father' is tabs's container, class 'data-container' used to fill every ta
 		}); 
 
      
-     1.Parameter 'tab_titles' to set tab's title.The json key is css class type of tab and the json value is tab's title.
-     2.Parameter 'active_position' to set index of which tab actived when page be initialized.
+1.Parameter 'tab_titles' to set tab's title.The json key is css class type of tab and the json value is tab's title.
+2.Parameter 'active_position' to set index of which tab actived when page be initialized.
