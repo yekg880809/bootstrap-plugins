@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>popModel</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="bootstrap2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="css/custom/navbar-fixed-top.css" rel="stylesheet">-->
+	<link href="css/custom/popModel.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+	<!-- Modal -->
+	<div id="info" class="modal hide fade" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+	  <div class="modal-header">
+		<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 class="title"></h3>
+	  </div>
+	  <div class="modal-body">
+		<div class="alert alert-block fade in">
+			<h4 class="alert-heading content" style="display:inline;"></h4>		
+		</div>
+	  </div>
+	  <div class="modal-footer">
+	  </div>
+	</div>
+
+	<div id="warning" class="modal hide fade" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+	  <div class="modal-header">
+		<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 class="title"></h3>
+	  </div>
+	  <div class="modal-body">
+		<div class="alert alert-block fade in">
+			<h4 class="alert-heading content" style="display:inline;"></h4>		
+		</div>
+	  </div>
+	  <div class="modal-footer">
+	  </div>
+	</div>
+
+	<div id="error" class="modal hide fade" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+	  <div class="modal-header">
+		<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 class="title"></h3>
+	  </div>
+	  <div class="modal-body">
+		<div class="alert alert-block fade in">
+			<p class="alert-heading content"></p>		
+		</div>
+	  </div>
+	  <div class="modal-footer">
+	  </div>
+	</div>
+
+	<div id="no-btn" class="modal hide fade" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+	  <div class="modal-header">
+		<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 class="title"></h3>
+	  </div>
+	  <div class="modal-body">
+		<div class="alert alert-block fade in">
+			<p class="alert-heading content"></p>		
+		</div>
+	  </div>
+	  <div class="modal-footer">
+	  </div>
+	</div>
+
+	<div class='btn-group'>
+		<a class='btn info'>POP INFO</a>
+		<a class='btn warning'>POP WARNING</a>
+		<a class='btn error'>POP ERROR</a>
+		<a class='btn no-button'>POP NO BUTTON</a>
+	</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.8.3.js"></script>
+	<!--<script src="js/jquery.js"></script>-->
+	<script src="assets/js/docs.min.js"></script>
+	<script src="assets/js/src/application.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- plugins -->
+	<script src="plugin/bootstrap-popModal.js"></script>
+	<script type="text/javascript"> //initiating jQuery 
+			
+			$('.info').popModal({
+				modal:'info',
+				type:'info',
+				title:'title',
+				content:'cot',
+				buttons:{'确':function(){alert('确1')},'消':function(){alert('取2消')},'开':function(){alert('开消')}}
+			});	
+
+			$('.warning').popModal({
+				modal:'warning',
+				type:'warning',
+				title:'title',
+				content:'cot',
+				buttons:{'确':function(){alert('确1')},'消':function(){alert('取2消')},'开':function(){alert('开消')}}
+			});	
+
+			$('.error').popModal({
+				modal:'error',
+				type:'error',
+				title:'title',
+				content:'cotjhfjfyugiugiugfiugloiglivgflkigfliugliugfligliugliugliu,gliugliugfliyfdsfsdfsdfsdfsdfsdfsdfsdfsliygfliugfligiugli',
+				buttons:{'确':function(){alert('确1')},'消':function(){alert('取2消')},'开':function(){alert('开消')}}
+			});	
+
+			$('.no-button').popModal({
+				modal:'no-btn',
+				type:'warning',
+				title:'title',
+				content:'cot',
+				closeOther:false,
+				buttons:'none'
+			});	
+		
+
+
+	</script>
+  </body>
+</html>
