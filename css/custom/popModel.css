@@ -1,3 +1,11 @@
+.modal-header{
+	padding: 3px 15px;
+}
+
+.modal-header .close {
+    margin-top: 20px;
+}
+
 .alert{
 	margin: 0;
 }
@@ -8,3 +16,4 @@
 	word-wrap :break-word ;
 
 }
+

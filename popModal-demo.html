@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-	<link href="bootstrap2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <!--<link href="css/custom/navbar-fixed-top.css" rel="stylesheet">-->
@@ -31,67 +31,83 @@
 
   <body>
 	<!-- Modal -->
-	<div id="info" class="modal hide fade" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-	  <div class="modal-header">
-		<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
-		<h3 class="title"></h3>
-	  </div>
-	  <div class="modal-body">
-		<div class="alert alert-block fade in">
-			<h4 class="alert-heading content" style="display:inline;"></h4>		
+	<div id="info" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 class="title"></h3>
+				</div>
+				<div class="modal-body">
+					<div class="alert alert-block fade in">
+						<h4 class="alert-heading content" style="display:inline;"></h4>		
+					</div>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
 		</div>
-	  </div>
-	  <div class="modal-footer">
-	  </div>
 	</div>
 
-	<div id="warning" class="modal hide fade" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-	  <div class="modal-header">
-		<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
-		<h3 class="title"></h3>
-	  </div>
-	  <div class="modal-body">
-		<div class="alert alert-block fade in">
-			<h4 class="alert-heading content" style="display:inline;"></h4>		
-		</div>
-	  </div>
-	  <div class="modal-footer">
-	  </div>
+	<div id="warning" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 class="title"></h3>
+				</div>
+				<div class="modal-body">
+					<div class="alert alert-block fade in">
+						<h4 class="alert-heading content" style="display:inline;"></h4>		
+					</div>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+	  	</div>
 	</div>
 
-	<div id="error" class="modal hide fade" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-	  <div class="modal-header">
-		<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
-		<h3 class="title"></h3>
-	  </div>
-	  <div class="modal-body">
-		<div class="alert alert-block fade in">
-			<p class="alert-heading content"></p>		
+	<div id="error" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 class="title"></h3>
+				</div>
+				<div class="modal-body">
+					<div class="alert alert-block fade in">
+						<p class="alert-heading content"></p>		
+					</div>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
 		</div>
-	  </div>
-	  <div class="modal-footer">
-	  </div>
 	</div>
 
-	<div id="no-btn" class="modal hide fade" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-	  <div class="modal-header">
-		<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
-		<h3 class="title"></h3>
-	  </div>
-	  <div class="modal-body">
-		<div class="alert alert-block fade in">
-			<p class="alert-heading content"></p>		
+	<div id="no-btn" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+			    <div class="modal-header">
+					<button type="button" class="close list-close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3 class="title"></h3>
+			  	</div>
+			  	<div class="modal-body">
+					<div class="alert alert-block fade in">
+						<p class="alert-heading content"></p>		
+					</div>
+			  	</div>
+			  	<div class="modal-footer">
+			  	</div>
+			</div>
 		</div>
-	  </div>
-	  <div class="modal-footer">
-	  </div>
 	</div>
 
 	<div class='btn-group'>
-		<a class='btn info'>POP INFO</a>
-		<a class='btn warning'>POP WARNING</a>
-		<a class='btn error'>POP ERROR</a>
-		<a class='btn no-button'>POP NO BUTTON</a>
+		<button type="button" class='btn btn-info info' role="button">POP INFO</button>
+		<button type="button" class='btn btn-warning warning' role="button">POP WARNING</button>
+		<button type="button" class='btn btn-danger error' role="button">POP ERROR</button>
+		<!-- <button type="button" class='btn btn-primary no-btn' role="button">POP NO BUTTON</button> -->
 	</div>
 
 
@@ -109,11 +125,12 @@
 	<script src="plugin/bootstrap-popModal.js"></script>
 	<script type="text/javascript"> //initiating jQuery 
 			
+
 			$('.info').popModal({
 				modal:'info',
 				type:'info',
 				title:'title',
-				content:'cot',
+				content:'cotasdfsdafasdfsafsd',
 				buttons:{'确':function(){alert('确1')},'消':function(){alert('取2消')},'开':function(){alert('开消')}}
 			});	
 
@@ -127,13 +144,13 @@
 
 			$('.error').popModal({
 				modal:'error',
-				type:'error',
+				type:'danger',
 				title:'title',
 				content:'cotjhfjfyugiugiugfiugloiglivgflkigfliugliugfligliugliugliu,gliugliugfliyfdsfsdfsdfsdfsdfsdfsdfsdfsliygfliugfligiugli',
 				buttons:{'确':function(){alert('确1')},'消':function(){alert('取2消')},'开':function(){alert('开消')}}
 			});	
 
-			$('.no-button').popModal({
+			$('.no-btn').popModal({
 				modal:'no-btn',
 				type:'warning',
 				title:'title',
