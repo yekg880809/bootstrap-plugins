@@ -1,8 +1,4 @@
-(function($) {
-
-	var pluginName = 'pop-modal';
-
-	var v = '0.1';
+(function($) {  
 				$.fn.popModal = function(options) { 
 						debug(this);  
 						$this = $(this);
@@ -25,7 +21,6 @@
 						var options = $.extend(defaults, options);  
 						
 						return this.each(function() { 
-
 							$('#'+options.modal).find('.title').text(options.title);
 							$('#'+options.modal).find('.content').text(options.content);
 							if('none'==options.buttons){
@@ -34,7 +29,6 @@
 								$.fn.popModal.bindButton(options.buttons,options.modal);
 								$('#'+options.modal).find('.modal-footer').show();
 							}
-
 							$.fn.popModal.setAlertType(options.type,options.modal);
 					
 							$.fn.popModal.bindEvents($(this),options.modal,options.closeOther,$.fn.popModal.showModal);
@@ -49,12 +43,12 @@
 					}; 
 
 					$.fn.popModal.setAlertType = function(type,modal){
-						$('#'+modal).find('.alert').removeClass('alert-warning').removeClass('alert-info').removeClass('alert-error').addClass('alert-'+type);
+						$('#'+modal).find('.alert').removeClass('alert-warning').removeClass('alert-info').removeClass('alert-danger').addClass('alert-'+type);
 					};
 
 					$.fn.popModal.bindButton = function(buttons,modal){
 						$.each(buttons,function(n,value){
-							var button = $('<button class="btn" data-dismiss="modal" aria-hidden="true">'+n+'</button>');
+							var button = $('<button class="btn btn-primary" data-dismiss="modal" type="button">'+n+'</button>');
 							$(button).on('click',function(e){$(value);e.stopPropagation();});
 							$('#'+modal).find('.modal-footer').append(button);
 						});
